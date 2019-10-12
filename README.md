@@ -48,7 +48,7 @@
                     "geo":{"country":"{}".format(county)},"complexKeywordsRestriction":{"keyword":[{"type":"BROAD","value":"{}".format(search_name)}]}}],
                     "requestOptions":{"property":"","backend":"IZG","category":0}
         },
-        'token': 'toke from web',
+        'token': 'token from web',
         'tz': -480
     }
     ```

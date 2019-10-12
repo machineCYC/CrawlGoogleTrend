@@ -1,5 +1,6 @@
 import requests
 import urllib
+import conf
 
 URL = 'https://trends.google.com/trends/api/widgetdata/multiline'
 
@@ -15,7 +16,7 @@ params = {
         "locale":"zh-TW",
         "comparisonItem":[{"geo":{"country":"{}".format(county)},"complexKeywordsRestriction":{"keyword":[{"type":"BROAD","value":"{}".format(search_name)}]}}],"requestOptions":{"property":"","backend":"IZG","category":0}
     },
-    'token': 'APP6_UEAAAAAXaLGdj40_jHCV6wcRa-3-SK8-ibgjymU',
+    'token': conf.token,
     'tz': -480
 }
 params = urllib.parse.urlencode(params).encode('utf-8')
